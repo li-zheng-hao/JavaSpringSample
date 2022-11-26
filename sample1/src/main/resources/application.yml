@@ -8,7 +8,13 @@
     driver-class-name: com.mysql.cj.jdbc.Driver
     # 连接池
     type: com.alibaba.druid.pool.DruidDataSource
-
+  jackson:
+    #格式化
+    date-format: yyyy-MM-dd hh:mm:ss
+    #东八区
+    time-zone: GMT+8
+    # null字段不返回前端
+    default-property-inclusion: non_null
 
 #mybatis:
 #  type-aliases-package: com.example.sample1.pojo
