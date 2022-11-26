@@ -1,0 +1,22 @@
+﻿spring:
+  datasource:
+    username: root
+    password: lzh123456
+    #    mysql8 连接
+    url: jdbc:mysql://127.0.0.1:3306/javatest?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    #    mysql8 要加cj
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+#mybatis:
+#  type-aliases-package: com.example.sample1.pojo
+#  mapper-locations: classpath:/mapper/*.xml
+
+logging:
+  file:
+    name: log/log.log
+  level:
+    root: info
+    com.example.sample1: debug
